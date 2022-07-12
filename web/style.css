@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    font-style: bold;
+}
+
+body {
+    background-color: #303A52;
+}
+
+.interface {
+    height: 380px;
+    width: 1140px;
+    margin: auto;
+}
+
+.language {
+    float: top;
+    height: 60px;
+    width: 1140px;
+}
+
+.firstLanguage, .secondLanguage {
+    float: left;
+    height: 60px;
+    width: 500px;
+    line-height: 60px;
+    font-size: 36px;
+    color: #d9d9d9;
+}
+
+.firstLanguage {
+    margin-left: 40px;
+}
+
+.secondLanguage p {
+    float: right;
+}
+
+.language button {
+    float: left;
+    width: 52px;
+    height: 52px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-top: 4px;
+    background-color: #596174;
+}
+
+.language .show {
+    float: left;
+    width: 52px;
+    height: 52px;
+    border-radius: 5px;
+    margin-top: 4px;
+}
+
+.textTranslate {
+    float: top;
+    height: 320px;
+    width: 1140px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.translate, .info {
+    float: left;
+    height: 274px;
+    width: 524px;
+    background-color: #596174;
+    resize: none;
+    border: none;
+    border-radius: 15px 15px 0 0;
+    border: 1px solid #000;
+    font-size: 30px;
+    padding: 20px;
+    color: #fff;
+}
+
+.stinger1, .stinger2{
+    float: left;
+    height: 20px;
+    width: 52px; 
+}
+
+.stinger2 {
+    transform: rotate(-180deg);
+}
+
+.stMain {
+    height: 4px;
+    width: 40px;
+    background-color: #fff;
+    margin: 8px auto;
+}
+
+.st1, .st2 {
+    position: absolute;
+    margin-left: 6px;
+    margin-top: -3px;
+    width: 15px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.st1 {
+    margin-top: 4px;
+    transform: rotate(-25deg);
+}
+
+.st2{
+    margin-top: -7px;
+    transform: rotate(25deg);
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="eel.js"></script>
+	<script src="jquery.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<textarea id="postTranslate" class="translate1" type="text" placeholder="Введите текст..."></textarea>
+
+	<button id="show">Перевести</button>
+
+	<div id="info" class="info">
+		
+	</div>
+	
+
+<script type="text/javascript">
+	async function display() {
+		let place = document.getElementById('postTranslate').value;
+		let res = await eel.get_word(place)();
+		document.getElementById('info').innerHTML = res;
+	}
+
+	$('#show').click(function() {
+		display();
+	});
+</script>
+
+</body>
+</html>
